@@ -21,7 +21,7 @@ app.post('/', (req, res) => {
     let username = req.body.email;
     let password = req.body.psw;
     if (username === 'issa@eng.com' && password === 'admin') {
-        res.sendFile('Login successful');
+        res.send('Login successful');
     }
     else {
         res.send('Login failed');
