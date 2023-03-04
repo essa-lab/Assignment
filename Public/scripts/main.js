@@ -61,31 +61,3 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 } 
 
-
-let slidesIndex = 1;
-showSlide(slidesIndex);
-
-
-function plusSlide(n) {
-  showSlide(slidesIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlidee(n) {
-  showSlide(slidesIndex = n);
-}
-function showSlide(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlide");
-  let dots = document.getElementsByClassName("dots");
-  if (n > slides.length) {slidesIndex = 1}
-  if (n < 1) {slidesIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slidesIndex-1].style.display = "block";
-  dots[slidesIndex-1].className += " active";
-} 
