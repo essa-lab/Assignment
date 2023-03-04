@@ -72,7 +72,7 @@ hr {
 .button-92 {
   --c: #fff;
   background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) var(--_p,100%)/300% no-repeat,
-    #81e6ff;
+    #1e90ff;
   color: #0000;
   border: none;
   transform: perspective(500px) rotateY(calc(20deg*var(--_i,-1)));
@@ -101,8 +101,8 @@ hr {
   font-size: 1.5rem;
   margin: 0 auto;
   cursor: pointer;
-  padding: 1em 1em;
-  border-radius: 50%;
+  padding: 0.4em 3.4em;
+  border-radius: 0.5em;
   display: block;
 }
 
@@ -120,11 +120,12 @@ hr {
 
 .form-popup {
   display: none;
-  position: fixed;
-  bottom: 0;
-  right: 15px;
+  position: absolute;
+  top: 100%;
+  right: 40%;
   border: 3px solid #f1f1f1;
   z-index: 9;
+  
 }
 
 
@@ -261,6 +262,7 @@ hr {
   padding: 12px 30px;
   cursor: pointer;
   font-size: 20px;
+  border-radius: 0.5em;
 }
 
 /* Darker background on mouse-over */
